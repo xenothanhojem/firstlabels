@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Labels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
+    <style>
+        .navbar-custom {
+            background-color: #000080;
+        }
+        .footer {
+            background-color: #000080;
+            color: white;
+        }
+        .contact-section {
+            background-color: #0000FF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header same as main structure -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <a class="navbar-brand" href="#">
+                <img src="images/c0a59cb2-59e7-4996-9bd0-82c30dc9f730.png" alt="First Labels Logo" height="50">
+            </a>
+            <div class="ml-auto">
+                <span class="navbar-text text-white">
+                    <img src="images/telephone_edited.png" alt="Phone Icon" class="mr-2">
+                    086 115 2235
+                </span>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="services.html#custom-labels">Custom Labels</a>
+                            <a class="dropdown-item" href="services.html#stock-labels">Stock Labels</a>
+                            <a class="dropdown-item" href="services.html#barcode-labels">Barcode Labels</a>
+                            <a class="dropdown-item" href="services.html#label-printers">Label Printers</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+            </form> -->
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1>About us</h1>
+        <p>First Labels has been operating successfully since 1996. Our mission is to be the most efficient and cost-effective specialists in Label Manufacturing, surpassing the expectations of our clients. We are committed to promoting environmental well-being while achieving prosperity for our company and our people.</p>
+
+        <h2>Our core beliefs are as follows:</h2>
+        <ul>
+            <li><strong>Clients First:</strong> We prioritize the needs and satisfaction of our clients.</li>
+            <li><strong>People as Assets:</strong> We recognize that our greatest asset is our talented team.</li>
+            <li><strong>Team Efforts for Growth:</strong> Through collaborative efforts, we aim for profitable growth.</li>
+            <li><strong>Constant Improvement:</strong> We strive for defect-free operations by continuously improving productivity and quality through training and open communication.</li>
+            <li><strong>Strong Marketing:</strong> We have a robust marketing program in place to secure our future success.</li>
+            <li><strong>Enjoyable and Rewarding Work:</strong> We believe that work should always be enjoyable and rewarding.</li>
+        </ul>
+
+        <p>At First Labels, we provide comprehensive label services throughout Southern Africa. With branches countrywide, we ensure that we meet the labeling needs of Southern Africa effectively.</p>
+        <p>No job is too big or too small for us, and our unwavering commitment to improving our service and quality through our ISO quality system makes us the perfect business partner for all your label requirements.</p>
+
+        <div class="text-center mt-5">
+            <img src="images/ISO9001.jpg" alt="ISO Certification" class="img-fluid">
+        </div>
+    </main>
+
+    <!-- Footer same as main structure -->
+    <footer class="footer py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link text-white">About</a></li>
+                        <li class="nav-item"><a href="services.html#custom-labels" class="nav-link text-white">Custom Labels</a></li>
+                        <li class="nav-item"><a href="services.html#stock-labels" class="nav-link text-white">Stock Labels</a></li>
+                        <li class="nav-item"><a href="services.html#barcode-labels" class="nav-link text-white">Barcode Labels</a></li>
+                        <li class="nav-item"><a href="services.html#label-printers" class="nav-link text-white">Label Printers</a></li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <small>&copy; 2021 Etabels (Pty) Ltd t/a First Labels. All rights reserved.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts same as main structure -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth scrolling for Contact Us link
+        document.querySelector('a[href="#contact"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#contact').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
